@@ -1,17 +1,17 @@
 {
   "latency": {
-    "overhead_s": 2.043341456843451e-05,
-    "compute_flops_s": 5635654845378.024,
-    "bandwidth_bytes_s": 77050002318.03203
+    "overhead_s": 2.0609950785473507e-05,
+    "compute_flops_s": 5672580450663.283,
+    "bandwidth_bytes_s": 76323770533.55888
   },
   "energy": {
-    "base_power_w": 63.04215132279862,
+    "base_power_w": 63.38988469781771,
     "joules_per_flop": 0.0,
     "joules_per_byte": 0.0,
     "latency": {
-      "overhead_s": 2.043341456843451e-05,
-      "compute_flops_s": 5635654845378.024,
-      "bandwidth_bytes_s": 77050002318.03203
+      "overhead_s": 2.0609950785473507e-05,
+      "compute_flops_s": 5672580450663.283,
+      "bandwidth_bytes_s": 76323770533.55888
     }
   }
 }
