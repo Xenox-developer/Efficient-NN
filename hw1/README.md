@@ -24,7 +24,7 @@
 
 ## How to reproduce
 
-1. Открыть [ноутбук в Kaggle](https://www.kaggle.com/code/nikitachindin/hw1-cnn?scriptVersionId=353027889) и создать редактируемую копию.
+1. Открыть [ноутбук в Kaggle](https://www.kaggle.com/code/nikitachindin/hw1-cnn) и создать редактируемую копию.
 2. Включить GPU T4.
 3. Выбрать **Save Version -> Save & Run All** с GPU для полного запуска с нуля.
 4. Дождаться завершения и открыть **Output -> hw1 -> results**: CSV с измерениями, `theta.json` и графики в `figures/`.
