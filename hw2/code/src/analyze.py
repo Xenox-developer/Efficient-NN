@@ -101,14 +101,12 @@ def main():
             onecycle_hit_target=cycle['seconds_to_target'] is not None))
     (root / 'paired_comparison.json').write_text(json.dumps(paired, indent=2))
     lines = ['# Measured results', '',
-             'Accuracy is measured on the test set using the checkpoint selected by validation accuracy.', '',
              '| Method | Seeds | Test accuracy, % | SD, pp | Updates | Mean time, min |',
              '|---|---|---:|---:|---:|---:|']
     for r in output_rows:
         sd = f'{r["test_accuracy_sd_pp"]:.2f}' if r['n'] > 1 else 'unavailable (n=1)'
         lines.append(f'| {r["experiment"]} | {r["seeds"]} | {r["test_accuracy_mean_pct"]:.2f} | {sd} | {r["updates"]} | {r["elapsed_seconds_mean"]/60:.2f} |')
-    lines.extend(['', 'A budget ratio is not a measured speedup. Time-to-target uses the first epoch-end validation measurement at or above the fixed target.', '',
-                  'Hardware: ' + str(first['gpu']) + ', PyTorch ' + str(first['torch']) + ', FP32.', '',
+    lines.extend(['',
                   'Paired comparisons:', '```json', json.dumps(paired, indent=2), '```', '',
                   'Interpretation must consider test accuracy differences, missing runs and seed variability.'])
     (root / 'results.md').write_text('\n'.join(lines))

@@ -1,6 +1,5 @@
 # Measured results
 
-Accuracy is measured on the test set using the checkpoint selected by validation accuracy.
 
 | Method | Seeds | Test accuracy, % | SD, pp | Updates | Mean time, min |
 |---|---|---:|---:|---:|---:|
@@ -8,9 +7,7 @@ Accuracy is measured on the test set using the checkpoint selected by validation
 | baseline_short | 42,43,44 | 84.00 | 0.27 | 2112 | 17.13 |
 | onecycle | 42,43,44 | 89.59 | 0.24 | 2112 | 17.00 |
 
-A budget ratio is not a measured speedup. Time-to-target uses the first epoch-end validation measurement at or above the fixed target.
 
-Hardware: Tesla T4, PyTorch 2.11.0+cu128, FP32.
 
 Paired comparisons:
 ```json

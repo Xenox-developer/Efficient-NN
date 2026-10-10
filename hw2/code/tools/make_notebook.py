@@ -237,6 +237,23 @@ DEFAULT_SECTIONS = {'cells': [{'cell_type': 'markdown',
  'nbformat_minor': 5}
 
 
+def _clean_requested_notes(text):
+    prefixes = (
+        'Same protocol and fixed max LR',
+        'Same experiment settings and fixed max LR',
+        'The separate LR pilot was already completed',
+        'Use the value selected before the original main comparison:',
+        '`baseline_long`:',
+        'Train/validation/test:',
+        'Сначала один seed, затем 42/43/44.',
+        'Все три seeds выполняются последовательно с одним фиксированным LR.',
+        'В этой сохранённой версии последовательно запускаются seeds 43 и 44;',
+        'Архив включает checkpoints',
+    )
+    return ''.join(line for line in text.splitlines(keepends=True)
+                   if not line.lstrip().startswith(prefixes))
+
+
 def build(template, destination):
     notebook = json.loads(template.read_text()) if template is not None else json.loads(json.dumps(DEFAULT_SECTIONS))
     cells = []
@@ -255,7 +272,7 @@ def build(template, destination):
             text += '\nЭти эпохи, разделение данных и выбор checkpoint относятся к нашей адаптации. Циклический momentum 0.95–0.85 встречается в статье для wide ResNet и CIFAR-100 (таблица 2), но не является настройкой основного CIFAR-10 / ResNet-56 примера (таблица 8: momentum 0.9).\n'
         text = text.replace('Same protocol', 'Same experiment settings').replace('## 1. Fixed protocol from seed 42', '## 1. Сохранённые настройки нашего seed 42')
         text = text.replace('Сначала один seed, затем 42/43/44.', 'В этой сохранённой версии последовательно запускаются seeds 43 и 44; seed 42 выполнен в версии 1.')
-        cell['source'] = text.splitlines(keepends=True)
+        cell['source'] = _clean_requested_notes(text).splitlines(keepends=True)
 
     def add(kind, text):
         cell = dict(cell_type=kind, metadata={}, source=text.splitlines(keepends=True))
