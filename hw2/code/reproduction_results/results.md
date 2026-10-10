@@ -39,4 +39,3 @@ Paired comparisons:
 ]
 ```
 
-Interpretation must consider test accuracy differences, missing runs and seed variability.

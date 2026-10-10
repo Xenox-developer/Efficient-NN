@@ -249,6 +249,9 @@ def _clean_requested_notes(text):
         'Все три seeds выполняются последовательно с одним фиксированным LR.',
         'В этой сохранённой версии последовательно запускаются seeds 43 и 44;',
         'Архив включает checkpoints',
+        'Для продолжения прошлой сессии сначала скопируйте',
+        'Сравниваем test accuracy и SD по seeds',
+        'Отношение бюджетов 120/24 = 5',
     )
     return ''.join(line for line in text.splitlines(keepends=True)
                    if not line.lstrip().startswith(prefixes))

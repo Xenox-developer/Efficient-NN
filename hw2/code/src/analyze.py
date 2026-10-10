@@ -107,8 +107,7 @@ def main():
         sd = f'{r["test_accuracy_sd_pp"]:.2f}' if r['n'] > 1 else 'unavailable (n=1)'
         lines.append(f'| {r["experiment"]} | {r["seeds"]} | {r["test_accuracy_mean_pct"]:.2f} | {sd} | {r["updates"]} | {r["elapsed_seconds_mean"]/60:.2f} |')
     lines.extend(['',
-                  'Paired comparisons:', '```json', json.dumps(paired, indent=2), '```', '',
-                  'Interpretation must consider test accuracy differences, missing runs and seed variability.'])
+                  'Paired comparisons:', '```json', json.dumps(paired, indent=2), '```'])
     (root / 'results.md').write_text('\n'.join(lines))
     print(f'Exported {root / "aggregate.csv"}, results.md, paired_comparison.json and figures.')
 
