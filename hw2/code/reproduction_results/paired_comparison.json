@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 42,
+    "test_delta_pp": -0.10999999999999899,
+    "budget_ratio": 5.0,
+    "time_to_target_ratio": 1.8827833867683554,
+    "baseline_hit_target": true,
+    "onecycle_hit_target": true
+  },
+  {
+    "seed": 43,
+    "test_delta_pp": -0.32999999999999696,
+    "budget_ratio": 5.0,
+    "time_to_target_ratio": 1.4053309052735214,
+    "baseline_hit_target": true,
+    "onecycle_hit_target": true
+  },
+  {
+    "seed": 44,
+    "test_delta_pp": -0.41000000000001036,
+    "budget_ratio": 5.0,
+    "time_to_target_ratio": 1.5325760850819163,
+    "baseline_hit_target": true,
+    "onecycle_hit_target": true
+  }
+]

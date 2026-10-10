@@ -1,0 +1,5 @@
+{
+  "max_lr": 1.0,
+  "reason": "Frozen from seed-42 pilot in Kaggle version 1 (356480294); no tuning on repeat seeds or test set.",
+  "source_version": "356480294"
+}

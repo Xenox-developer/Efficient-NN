@@ -1,0 +1,9 @@
+{
+  "experiment": "lr_range",
+  "seed": 42,
+  "synthetic": false,
+  "updates": 1000,
+  "diverged": false,
+  "test_evaluated": false,
+  "elapsed_seconds": 482.066268183
+}

@@ -1,0 +1,17 @@
+{
+  "experiment": "onecycle",
+  "seed": 44,
+  "synthetic": false,
+  "epochs": 24,
+  "updates": 2112,
+  "final_val_accuracy": 0.9044,
+  "best_val_accuracy": 0.9044,
+  "selected_epoch": 24,
+  "test_accuracy": 0.8936,
+  "test_loss": 0.3425800148010254,
+  "train_seconds": 950.5046939310032,
+  "elapsed_seconds": 972.5946853249934,
+  "target_val_accuracy": 0.85,
+  "steps_to_target": 1672,
+  "seconds_to_target": 770.4122260669938
+}

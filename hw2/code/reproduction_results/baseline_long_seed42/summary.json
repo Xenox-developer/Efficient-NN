@@ -1,0 +1,17 @@
+{
+  "experiment": "baseline_long",
+  "seed": 42,
+  "synthetic": false,
+  "epochs": 120,
+  "updates": 10560,
+  "final_val_accuracy": 0.9066,
+  "best_val_accuracy": 0.908,
+  "selected_epoch": 87,
+  "test_accuracy": 0.8969,
+  "test_loss": 0.46587680206298826,
+  "train_seconds": 5411.641761653998,
+  "elapsed_seconds": 5534.416023577998,
+  "target_val_accuracy": 0.85,
+  "steps_to_target": 3520,
+  "seconds_to_target": 1830.4445640069994
+}

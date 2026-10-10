@@ -1,0 +1,12 @@
+{
+  "max_lr": 1.0,
+  "reason": "Fixed before the main runs: best validation point of the separate LR range test, lr=1.6016016016016015, val_accuracy=0.7654. Chosen maximum is 80% of this LR, bounded to [0.2, 1.0]. This is a conservative heuristic, not a guarantee of super-convergence.",
+  "pilot_best": {
+    "step": "800",
+    "lr": "1.6016016016016015",
+    "loss": "0.6813783049583435",
+    "smooth_loss": "0.6402754395449691",
+    "val_loss": "0.741561669921875",
+    "val_accuracy": "0.7654"
+  }
+}

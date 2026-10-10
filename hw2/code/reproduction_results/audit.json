@@ -1,0 +1,108 @@
+{
+  "checks": [
+    {
+      "run": "baseline_long_seed42",
+      "epochs": 120,
+      "history_rows": 120,
+      "checkpoint_verified": true,
+      "source_sha256": "f1a37e217236174f8724f24594b3f1f8840bfcd814d6e7d83f1a32ff75bbfacc"
+    },
+    {
+      "run": "baseline_long_seed43",
+      "epochs": 120,
+      "history_rows": 120,
+      "checkpoint_verified": true,
+      "source_sha256": "f1a37e217236174f8724f24594b3f1f8840bfcd814d6e7d83f1a32ff75bbfacc"
+    },
+    {
+      "run": "baseline_long_seed44",
+      "epochs": 120,
+      "history_rows": 120,
+      "checkpoint_verified": true,
+      "source_sha256": "f1a37e217236174f8724f24594b3f1f8840bfcd814d6e7d83f1a32ff75bbfacc"
+    },
+    {
+      "run": "baseline_short_seed42",
+      "epochs": 24,
+      "history_rows": 24,
+      "checkpoint_verified": true,
+      "source_sha256": "f1a37e217236174f8724f24594b3f1f8840bfcd814d6e7d83f1a32ff75bbfacc"
+    },
+    {
+      "run": "baseline_short_seed43",
+      "epochs": 24,
+      "history_rows": 24,
+      "checkpoint_verified": true,
+      "source_sha256": "f1a37e217236174f8724f24594b3f1f8840bfcd814d6e7d83f1a32ff75bbfacc"
+    },
+    {
+      "run": "baseline_short_seed44",
+      "epochs": 24,
+      "history_rows": 24,
+      "checkpoint_verified": true,
+      "source_sha256": "f1a37e217236174f8724f24594b3f1f8840bfcd814d6e7d83f1a32ff75bbfacc"
+    },
+    {
+      "run": "onecycle_seed42",
+      "epochs": 24,
+      "history_rows": 24,
+      "checkpoint_verified": true,
+      "source_sha256": "f1a37e217236174f8724f24594b3f1f8840bfcd814d6e7d83f1a32ff75bbfacc"
+    },
+    {
+      "run": "onecycle_seed43",
+      "epochs": 24,
+      "history_rows": 24,
+      "checkpoint_verified": true,
+      "source_sha256": "f1a37e217236174f8724f24594b3f1f8840bfcd814d6e7d83f1a32ff75bbfacc"
+    },
+    {
+      "run": "onecycle_seed44",
+      "epochs": 24,
+      "history_rows": 24,
+      "checkpoint_verified": true,
+      "source_sha256": "f1a37e217236174f8724f24594b3f1f8840bfcd814d6e7d83f1a32ff75bbfacc"
+    }
+  ],
+  "evidence_sha256": {
+    "aggregate.csv": "6f336312b23311c07f912c0cc06497fc715c758b8ab17cea629b81cd551a5986",
+    "paired_comparison.json": "4821ce19e66a3996e55f9310188182d4a16be0ee5a856cbffe02d8818e4af1d0",
+    "lr_selection_seed42.json": "f2d90fa37bd4785f475a21ff0379ed061d4170735b1181b475e88e0e0385cf50",
+    "lr_selection_repeats.json": "a4f5866d2ad6f21962eea668085d4e572557878ec12e02ba071297d6db1c7795",
+    "results.md": "12fd1bcd00363f0cae1dd334420ca5411c1b0962a20fbcadc690d333f04ffdd4",
+    "final_summary.json": "5228559818377588fcd791fc98b74331bd3fa6119bcc429166ef56cc706fe343",
+    "baseline_long_seed42/summary.json": "1c80c0c191b24721c175d3f299aa8b391164b66da35e465178e39e6cb2d87b28",
+    "baseline_long_seed42/history.csv": "6d453888521065097e274abb4cb6acbd79516a66d08afb87dd511868baaf6a1f",
+    "baseline_long_seed42/metadata.json": "c5718aff104d65e08dc1b44c791b8263f70a0aaacf35b7071284ec75a187db08",
+    "baseline_long_seed43/summary.json": "98dd4d7138a0572821d4c028bf2d57776aa4ee428f2af61b5dc67e2fb4c69d66",
+    "baseline_long_seed43/history.csv": "8937f79239cabecae549e6c7c291b6e3c6fa26991655b4a9ff03f76070497cf3",
+    "baseline_long_seed43/metadata.json": "7e2be1ef132c5f5dcc761668c613d04973a6f50cb1a04b793454ac27f8e3094a",
+    "baseline_long_seed44/summary.json": "5acada6d5e48d978ad592bba2f631b18dd9e72b339518e94c8a27854974933f0",
+    "baseline_long_seed44/history.csv": "6023af743c95db4acc3546178c6cea480e3ba858bfde34f06461d4881a289160",
+    "baseline_long_seed44/metadata.json": "c9be5aceaaea07590840191a8789074a46d8b79af2bf0ea186a8ef63107a825d",
+    "onecycle_seed42/summary.json": "9685465d8246cd112da1b77b02bb8b4868686b6ed83bdb97b7a52e6733b0494d",
+    "onecycle_seed42/history.csv": "6f7d2a9d3893bc35b1c8941d8a86f0cc9ef7f80fe0c8af9e16d63fa8755d3853",
+    "onecycle_seed42/metadata.json": "9b413535972712b7c60d265f49e698d115b95442e89d43b9a3701192c1182853",
+    "onecycle_seed43/summary.json": "84d9bfa9b89b9ef5ccf4e02d8fdf7538b61e0f3926e00445c1fc6ec44697f657",
+    "onecycle_seed43/history.csv": "e735362ef9652d52e6a5d5f7376354552fb5229d98a85fc5fe559f57e6ddb054",
+    "onecycle_seed43/metadata.json": "84f6cde3529049f78b787817bcaa58fcf2688fecaf3003d080166cd100684672",
+    "onecycle_seed44/summary.json": "b01adca1827dc425bf1f478908253ced1a6a358e62ec699d96eff2243bc10b74",
+    "onecycle_seed44/history.csv": "b0c1c2bc75383057e3c946478e97d6695acdd2beeb098e3290e5a64d4d459eac",
+    "onecycle_seed44/metadata.json": "515b4da252fec863dffcb8bd6d4b9f8578e6d30c033ac6ef1c37e0743e099188",
+    "figures/convergence_mean_sd.png": "abba7f943f457a3e11f80912a84580f61dc31052625731e5e99243dccbecb713",
+    "figures/lr_range_seed42.png": "e902adc0e1370c8008c466c0343419b75258169e3501c2c4f7558c661431ad70",
+    "figures/convergence.png": "1bce3f11bfe740f2d23b310632ace18e761a557b61be3e14bada181385130730",
+    "baseline_short_seed42/summary.json": "530feb2a76d94e37878ece4783d9bf8c8d05edbbdff86ee7aaf68eab93eee13f",
+    "baseline_short_seed42/history.csv": "83541bda8289e6e12afdd0ec1c435568a8a1896f64c16cfc2b0a8a2cda518059",
+    "baseline_short_seed42/metadata.json": "22d99461e517826da1f4e0f567a0b0a709ab3d1c834704cad2c89a8920e00adc",
+    "lr_range_seed42/summary.json": "d7df8de466e25d38fd19adc97f5581996b03db5fd35e573095641c1b92129205",
+    "lr_range_seed42/lr_range.csv": "1136fbcadb84bd0cdd6464d8bbe81df21cd1d3f4312218b87663b2339cc77d9b",
+    "lr_range_seed42/metadata.json": "63e9ff5e571c9bf5fe7eea3d2eaaecc34f0c323f962c889b5a3c5a6c515cd74f",
+    "baseline_short_seed44/summary.json": "c0b5d8af517dcd5f3733a48b608232777f3b18f572fc586945d9704729443797",
+    "baseline_short_seed44/history.csv": "21e2f75bff5ff1c5561f61979e002bf81e476634839c353952d889ce882939e6",
+    "baseline_short_seed44/metadata.json": "6147e720e555cf34cdcd2ef4def3c5fa413a5c91691ee36a5d38f6c9dc86e151",
+    "baseline_short_seed43/summary.json": "a25a49f43690abc2c46a1b04de79ef1259af49f94446618df84f7b37af63e6da",
+    "baseline_short_seed43/history.csv": "06c113ea42e01f117528c8b89a49f32f9e2eda8e47addbf3bb57686fb36ae2c9",
+    "baseline_short_seed43/metadata.json": "76e3644db3d714ddbb2a7edaf89474bc78e360eb8a15be69ee6553e33044c03e"
+  }
+}
